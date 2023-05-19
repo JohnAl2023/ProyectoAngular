@@ -9,6 +9,9 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+.container {
+  text-align: center;
+}
 .contenedor {
 	width: 90%;
 	margin: auto;
@@ -42,11 +45,45 @@ header nav a.activo {
 	color: #FFF;
 }
 
+
+  
+section {
+	margin-bottom: 30px;
+  }
+  
+  h1{
+    margin: 20px;
+    color: #FFF;
+  }
+   h2 {
+	margin: 0;
+    }
+  
+ul.horizontal-list {
+  display: flex; /* Establece el contenedor como un flex container */
+  flex-wrap: wrap;
+  list-style-type: none; /* Quita los estilos de viñetas de la lista */
+  padding: 0;
+  margin: 0;
+  font-size: 16px; /* Tamaño de la letra */
+  justify-content: space-between; /* Distribuye los elementos de manera uniforme en el contenedor */
+}
+
+ul.horizontal-list li {
+  margin-right: 10px; /* Espacio entre los elementos de la lista */
+}
+
+ul.horizontal-list li a {
+  text-decoration: none;
+  color: #faf6f6;
+}
+
+ul.horizontal-list li a.active {
+  font-weight: bold; /* Estilo para el enlace activo */
+}
+
 #input-search {
   width: 80%;
-  display: block;
-  margin: 0 auto;
-  text-align:left;
   margin-top: 20px;
   height: 4px;
   border: none;
@@ -73,36 +110,6 @@ select {
   margin-right: 20px;
 }
 
-ul.horizontal-list {
-  display: flex; /* Establece el contenedor como un flex container */
-  flex-wrap: wrap;
-  list-style-type: none; /* Quita los estilos de viñetas de la lista */
-  padding: 0;
-  margin: 0;
-  font-size: 16px; /* Tamaño de la letra */
-  justify-content: space-between; /* Distribuye los elementos de manera uniforme en el contenedor */
-
-}
-
-ul.horizontal-list li {
-  margin-right: 10px; /* Espacio entre los elementos de la lista */
-}
-
-ul.horizontal-list li a {
-  text-decoration: none;
-  color: #faf6f6;
-}
-
-ul.horizontal-list li a.active {
-  font-weight: bold; /* Estilo para el enlace activo */
-}
-
-h1 {
-  text-align: center;
-  margin-top: 20px; /* Ajusta el valor según tus necesidades */
-  color: #FFF;
-}
-
 
 #image-list {
   list-style: none;
@@ -114,7 +121,6 @@ h1 {
   width: 90%;
   max-width: 1300px;
   /* opcional - para establecer un ancho máximo */
- 
 }
 
 #image-list li {
@@ -122,40 +128,28 @@ h1 {
   margin-right: 10px;
   margin-bottom: 10px;
 }
-#mainfooter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-@media screen and (max-width: 800px) {
-	header .logotipo {
-		margin-bottom: 10px;
-		font-size: 30px;
-	}
-}
 
 @media screen and (max-width: 767px) {
   #image-list #image-list li {
     width: 50%;
   }
 }
-@media (max-width: 768px) {
-  .contenedor {
-    flex-direction: column;
-    height: auto;
-  }
+
+#mainfooter {
+  display: flex;
+  background-color: #080808;
+  justify-content: center;
+  align-items: center;
 }
-@media (max-width: 768px) {
-  nav {
-    text-align: center;
-    margin-top: -20px;
-  }
-}
-@media (max-width: 768px) {
-  nav a {
-    display: block;
-    margin: 10px 0;
-  }
+
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
 }

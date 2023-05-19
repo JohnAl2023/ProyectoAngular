@@ -193,6 +193,7 @@ ul.horizontal-list li a.active {
 
 #mainfooter {
   display: flex;
+  background-color: #080808;
   justify-content: center;
   align-items: center;
 }
