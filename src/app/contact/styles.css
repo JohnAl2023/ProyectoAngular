@@ -1,0 +1,251 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #000;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 30px 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: white;
+	font-size: 40px;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+  
+  section {
+	margin-bottom: 30px;
+  }
+  
+  h1, h2 {
+	margin: 0;
+  }
+  
+  
+.contenedor {
+    width: 90%;
+    margin: auto;
+   
+}
+
+header {
+    padding: 30px 0;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logotipo {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+
+header nav a {
+    color: #AAA;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+    color: #FFF;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h1, h2 {
+  margin: 0;
+}
+ul.horizontal-list {
+  display: flex; /* Establece el contenedor como un flex container */
+  flex-wrap: wrap;
+  list-style-type: none; /* Quita los estilos de viñetas de la lista */
+  padding: 0;
+  margin: 0;
+  font-size: 16px; /* Tamaño de la letra */
+  justify-content: space-between; /* Distribuye los elementos de manera uniforme en el contenedor */
+
+}
+
+ul.horizontal-list li {
+  margin-right: 10px; /* Espacio entre los elementos de la lista */
+}
+
+ul.horizontal-list li a {
+  text-decoration: none;
+  color: #faf6f6;
+}
+
+ul.horizontal-list li a.active {
+  font-weight: bold; /* Estilo para el enlace activo */
+}
+
+#contact {
+  font-size: 16px;
+  min-height: 40.62em;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(./img/1366_2000.png);
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 3.12em;
+  display: flex;
+  align-items: flex-end;
+  padding: 100px 0;
+}
+
+#contact h2 {
+  text-align: center;
+  padding-bottom: 10px;
+  color: #fcfcfd;
+}
+
+#contact p.large {
+  text-align: center;
+  padding-bottom: 50px;
+  color: #fcfcfd;
+  margin: 0 auto;
+  /* Agrega esta línea para centrar horizontalmente el párrafo */
+  max-width: 80%;
+  /* Establece el ancho máximo del párrafo al 90% */
+}
+
+#contact .btn {
+  display: inline-block;
+  font-size: 15px;
+  padding: 12px 23px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
+
+#contact .btn-dark {
+  background: #273746;
+  border: 1px solid #273746;
+  color: #fff;
+}
+
+#contact form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#contact form label {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+#contact form .form-group {
+  margin-bottom: 16px;
+}
+
+#contact form .form-group-control {
+  width: 100%;
+  padding: 7px 12px;
+  font-size: 1rem;
+  line-height: 1.5;
+  background: #d1cfcf;
+  border: none;
+  border-radius: 4px;
+}
+
+#contact form button {
+  width: 100%;
+}
+
+#mainfooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+  header .logotipo {
+      margin-bottom: 10px;
+      font-size: 30px;
+  }
+
+  header .contenedor {
+    flex-direction: column;
+    text-align: center;
+}
+
+.pelicula-principal {
+    font-size: 14px;
+}
+
+.pelicula-principal .descripcion {
+    max-width: 100%;
+}
+
+.peliculas-recomendadas .contenedor-carousel {
+    overflow: visible;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.image-grid {
+  overflow: visible;
+}
+
+.image-grid .img {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.peliculas-recomendadas .indicadores,
+.peliculas-recomendadas .flecha-izquierda,
+.peliculas-recomendadas .flecha-derecha {
+  display: none;
+}
+}
+
+
+
+
+
+
